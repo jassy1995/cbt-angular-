@@ -1,0 +1,122 @@
+<div class="container-fluid">
+  <form>
+      
+      <ol>
+        <li>Other name for alkane is  </li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(one_1.value,'chm',0)">
+                <input #one_1 type="radio" [checked]='service.chm[0] == one_1.value' class="form-check-input" id="radio1" name="optradio30" value="olefin" > olefin
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(one_2.value,'chm',0)">
+              <input #one_2 type="radio" [checked]='service.chm[0] == one_2.value' class="form-check-input" id="radio2" name="optradio30" value="wax" > wax
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(one_3.value,'chm',0)">
+                <input #one_3 type="radio" [checked]='service.chm[0] == one_3.value' class="form-check-input" id="radio3" name="optradio30" value=" antracine"> antracine
+              </label>
+            </div>
+            <div class="form-check-inline"(click)="service.tet(one_4.value,'chm',0)">
+                    <label class="form-check-label">
+                      <input #one_4 type="radio" [checked]='service.chm[0] == one_4.value' class="form-check-input" id="radio4" name="optradio30" value="parafin"> parafin
+                    </label>
+                  </div>
+
+                  <li>The combination of glucose and fructose give</li>
+        <div class="form-check-inline">
+            <label class="form-check-label"  (click)="service.tet(two_1.value,'chm',1)">
+                <input #two_1 type="radio" [checked]='service.chm[1] == two_1.value' class="form-check-input" id="radio1" name="optradio18" value="galactose"  > galactose
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label"  (click)="service.tet(two_2.value,'chm',1)">
+              <input #two_2 type="radio" [checked]='service.chm[1] == two_2.value' class="form-check-input" id="radio2" name="optradio18" value="sucrose" > sucrose
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label" (click)="service.tet(two_3.value,'chm',1)">
+                <input #two_3 type="radio" [checked]='service.chm[1] == two_3.value' class="form-check-input" id="radio3" name="optradio18" value="lactose" > lactose
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label" (click)="service.tet(two_4.value,'chm',1)">
+                      <input #two_4 type="radio" [checked]='service.chm[1] == two_4.value' class="form-check-input" id="radio4" name="optradio18" value="maltose"  > maltose
+                    </label>
+                  </div>
+
+                  <li>The method of separating mixture of palm oil and water is </li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(three_1.value,'chm',2)">
+                <input #three_1 type="radio" [checked]='service.chm[2] == three_1.value' class="form-check-input" id="radio1" name="optradio27" value="filtration"  > filtration
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(three_2.value,'chm',2)">
+              <input #three_2 type="radio" [checked]='service.chm[2] == three_2.value' class="form-check-input" id="radio2" name="optradio27" value="decantation" > decantation
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(three_3.value,'chm',2)">
+                <input #three_3 type="radio" [checked]='service.chm[2] == three_3.value' class="form-check-input" id="radio3" name="optradio27" value="distilation" > distilation
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label"(click)="service.tet(three_4.value,'chm',2)">
+                      <input #three_4 type="radio" [checked]='service.chm[2] == three_4.value' class="form-check-input" id="radio4" name="optradio27" value="separating funnel" > separating funnel
+                    </label>
+                  </div>
+
+                  <li>The heterogenous mixture of undisolve particle in a giving medium is what</li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(four_1.value,'chm',3)">
+                <input #four_1 type="radio" [checked]='service.chm[3] == four_1.value' class="form-check-input" id="radio1" name="optradio23" value="universal solvent"  > universal solvent
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(four_2.value,'chm',3)">
+              <input #four_2 type="radio" [checked]='service.chm[3] == four_2.value' class="form-check-input" id="radio2" name="optradio23" value="solvent" > solute
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(four_3.value,'chm',3)">
+                <input #four_3 type="radio" [checked]='service.chm[3] == four_3.value' class="form-check-input" id="radio3" name="optradio23" value="solution"> solution
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label"(click)="service.tet(four_4.value,'chm',3)">
+                      <input #four_4 type="radio" [checked]='service.chm[3] == four_4.value' class="form-check-input" id="radio4" name="optradio23" value="suspension"> suspension
+                    </label>
+                  </div>
+
+                  <li>blue litmus turn red,this feature belong to what</li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(five_1.value,'chm',4)">
+                <input #five_1 type="radio" [checked]='service.chm[4] == five_1.value' class="form-check-input" id="radio1" name="optradio16" value="base"  > base
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(five_2.value,'chm',4)">
+              <input #five_2 type="radio" [checked]='service.chm[4] == five_2.value' class="form-check-input" id="radio2" name="optradio16" value="alcohol" > alcohol
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(five_3.value,'chm',4)">
+                <input #five_3 type="radio" [checked]='service.chm[4] == five_3.value' class="form-check-input" id="radio3" name="optradio16" value=" acid" > acid
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label"(click)="service.tet(five_4.value,'chm',4)">
+                      <input #five_4 type="radio"  [checked]='service.chm[4] == five_4.value' class="form-check-input" id="radio4" name="optradio16" value="alkaline" > alkaline
+                    </label>
+                  </div>
+      </ol>
+      </form>
+
+       
+        <router-outlet></router-outlet>
+      </div>
+      
+
+

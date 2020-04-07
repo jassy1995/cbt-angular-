@@ -1,0 +1,119 @@
+<div class="container-fluid"> 
+<form>
+      
+      <ol>
+        <li>The unit of force is </li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(one_1.value,'phy',0)">
+                <input #one_1 type="radio" [checked]='service.phy[0] == one_1.value' class="form-check-input" id="radio1" name="optradio24" value="kilometer" > kilometer
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(one_2.value,'phy',0)">
+              <input #one_2 type="radio" [checked]='service.phy[0] == one_2.value' class="form-check-input" id="radio2" name="optradio24" value="watt"  > watt
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(one_3.value,'phy',0)">
+                <input #one_3 type="radio" [checked]='service.phy[0] == one_3.value' class="form-check-input" id="radio3" name="optradio24" value="joules" > joules
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label"(click)="service.tet(one_4.value,'phy',0)">
+                      <input #one_4 type="radio" [checked]='service.phy[0] == one_4.value' class="form-check-input" id="radio4" name="optradio24" value="newton" > newton
+                    </label>
+                  </div>
+
+                  <li>The combination of cell give</li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(two_1.value,'phy',1)">
+                <input #two_1 type="radio" [checked]='service.phy[1] == two_1.value' class="form-check-input" id="radio1" name="optradio30" value="emf" > emf
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(two_2.value,'phy',1)">
+              <input #two_2 type="radio" [checked]='service.phy[1] == two_2.value' class="form-check-input" id="radio2" name="optradio30" value="battery"> battery
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(two_3.value,'phy',1)">
+                <input #two_3 type="radio" [checked]='service.phy[1] == two_3.value' class="form-check-input" id="radio3" name="optradio30" value="electrode"> electrode
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label"(click)="service.tet(two_4.value,'phy',1)">
+                      <input #two_4 type="radio" [checked]='service.phy[1] == two_4.value' class="form-check-input" id="radio4" name="optradio30" value="p.d" > p.d
+                    </label>
+                  </div>
+
+                  <li>The following are derived quantity except</li>
+        <div class="form-check-inline">
+            <label class="form-check-label"  (click)="service.tet(three_1.value,'phy',2)">
+                <input #three_1 type="radio" [checked]='service.phy[2] == three_1.value' class="form-check-input" id="radio1" name="optradi55" value=" newton"  > newton
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label"  (click)="service.tet(three_2.value,'phy',2)">
+              <input #three_2 type="radio" [checked]='service.phy[2] == three_2.value' class="form-check-input" id="radio2" name="optradio55" value="weight" > weight
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label" (click)="service.tet(three_3.value,'phy',2)">
+                <input #three_3 type="radio" [checked]='service.phy[2] == three_3.value' class="form-check-input" id="radio3" name="optradio55" value="torque" > torque
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label" (click)="service.tet(three_4.value,'phy',2)">
+                      <input #three_4 type="radio" [checked]='service.phy[2] == three_4.value' class="form-check-input" id="radio4" name="optradio55" value=" meter" > meter
+                    </label>
+                  </div>
+
+                  <li>The distance between the upper and lower fixed point of a scale is</li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(four_1.value,'phy',3)">
+                <input #four_1 type="radio" [checked]='service.phy[3] == four_1.value' class="form-check-input" id="radio1" name="optradio13" value="fundamental interval" > fundamental interval
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(four_2.value,'phy',3)">
+              <input #four_2 type="radio" [checked]='service.phy[3] == four_2.value' class="form-check-input" id="radio2" name="optradio13" value="fundamental quantity"  > fundamental quantity
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(four_3.value,'phy',3)">
+                <input #four_3 type="radio" [checked]='service.phy[3] == four_3.value' class="form-check-input" id="radio3" name="optradio13" value="celsius scale" > celsius scale
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label"(click)="service.tet(four_4.value,'phy',3)">
+                      <input #four_4 type="radio" [checked]='service.phy[3] == four_4.value' class="form-check-input" id="radio4" name="optradio13" value="differential" > differential
+                    </label>
+                  </div>
+
+                  <li>How many law of motion do we have</li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(five_1.value,'phy',4)">
+                <input #five_1 type="radio" [checked]='service.phy[4] == five_1.value' class="form-check-input" id="radio1" name="optradio17" value="4"  > 4
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(five_2.value,'phy',4)">
+              <input #five_2 type="radio" [checked]='service.phy[4] == five_2.value' class="form-check-input" id="radio2" name="optradio17" value="2" > 2
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label"(click)="service.tet(five_3.value,'phy',4)">
+                <input #five_3 type="radio" [checked]='service.phy[4] == five_3.value' class="form-check-input" id="radio3" name="optradio17" value="3" > 3
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label"(click)="service.tet(five_4.value,'phy',4)">
+                      <input #five_4 type="radio" [checked]='service.phy[4] == five_4.value' class="form-check-input" id="radio4" name="optradio17" value="5" > 5
+                    </label>
+                  </div>
+      </ol>
+      </form>
+        <router-outlet></router-outlet>
+      </div>
+      
+

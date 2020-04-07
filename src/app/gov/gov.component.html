@@ -1,0 +1,123 @@
+
+<div class="container-fluid"> 
+  <form>
+      
+      <ol>
+        <li>Nigeria did their last census programm in which year  </li>
+        <div class="form-check-inline">
+            <label class="form-check-label" for="radio1" (click)="service.tet(one_1.value,'gov', 0)">
+                <input #one_1 type="radio" [checked]='service.gov[0] == one_1.value' class="form-check-input" id="radio1" name="optradio4" value="2008"> 2008
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" for="radio2" (click)="service.tet(one_2.value,'gov', 0)">
+              <input  #one_2 type="radio" [checked]='service.gov[0] == one_2.value' class="form-check-input" id="radio2" name="optradio4" value="2006"> 2006
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label" (click)="service.tet(one_3.value,'gov', 0)">
+                <input  #one_3 type="radio" [checked]='service.gov[0] == one_3.value' class="form-check-input" id="radio3" name="optradio4" value="2007"> 2007
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label" (click)="service.tet(one_4.value,'gov', 0)">
+                      <input #one_4 type="radio" [checked]='service.gov[0] == one_4.value' class="form-check-input" id="radio4" name="optradio4" value="2010"> 2010
+                    </label>
+                  </div>
+
+                  <li>who is the current oyo state governor</li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(two_1.value,'gov', 1)">
+                <input  #two_1 type="radio" [checked]='service.gov[1] == two_1.value' class="form-check-input" id="radio1" name="optradio6" value="Abiola Ajimobi" > Abiola Ajimobi
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(two_2.value,'gov', 1)">
+              <input  #two_2 type="radio" [checked]='service.gov[1] == two_2.value' class="form-check-input" id="radio2" name="optradio6" value="abdulfatai Bhuari"> abdulfatai Bhuari
+            </label>
+          </div>                                
+          <div class="form-check-inline">
+              <label class="form-check-label" (click)="service.tet(two_3.value,'gov', 1)">
+                <input  #two_3 type="radio" [checked]='service.gov[1] == two_3.value' class="form-check-input" id="radio3" name="optradio6" value="Seyi Makinde"> Seyi Makinde 
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label" (click)="service.tet(two_4.value,'gov', 1)">
+                      <input #two_4 type="radio" [checked]='service.gov[1] == two_4.value' class="form-check-input" id="radio4" name="optradio6" value="Bukola Saraki"> Bukola Saraki
+                    </label>
+                  </div>
+
+                  <li> When did Nigeria got her independence   </li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(three_1.value,'gov', 2)">
+                <input #three_1 type="radio" [checked]='service.gov[2] == three_1.value' class="form-check-input" id="radio1" name="optradio10" value="sep 1st 1954"> sep 1st 1954
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(three_2.value,'gov', 2)">
+              <input #three_2 type="radio" [checked]='service.gov[2] == three_2.value' class="form-check-input" id="radio2" name="optradio10" value="oct 2nd 1960"> oct 2nd 1960
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label" (click)="service.tet(three_3.value,'gov', 2)">
+                <input #three_3 type="radio" [checked]='service.gov[2] == three_3.value' class="form-check-input" id="radio3" name="optradio10" value="oct 21st 1963"> oct 21st 1963
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label" (click)="service.tet(three_4.value,'gov', 2)">
+                      <input #three_4 type="radio" [checked]='service.gov[2] == three_4.value' class="form-check-input" id="radio4" name="optradio10" value="oct 1st 1960"> oct 1st 1960
+                    </label>
+                  </div>
+
+                  <li>The arm of government that deal with formulation and implementation of law and order is </li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(four_1.value,'gov', 3)">
+                <input #four_1 type="radio" [checked]='service.gov[3] == four_1.value' class="form-check-input" id="radio1" name="optradio15" value=" paliamentary"> paliamentary
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(four_2.value,'gov', 3)">
+              <input  #four_2 type="radio" [checked]='service.gov[3] == four_2.value' class="form-check-input" id="radio2" name="optradio15" value="executive"> executive
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label" (click)="service.tet(four_3.value,'gov', 3)">
+                <input #four_3 type="radio" [checked]='service.gov[3] == four_3.value' class="form-check-input" id="radio3" name="optradio15" value="legislature"> legislature
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label" (click)="service.tet(four_4.value,'gov', 3)">
+                      <input #four_4 type="radio" [checked]='service.gov[3] == four_4.value' class="form-check-input" id="radio4" name="optradio15" value="judiciary"> judiciary
+                    </label>
+                  </div>
+
+                  <li>How many arm of government do we have in Nigeria</li>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(five_1.value,'gov', 4)">
+                <input #five_1 type="radio" [checked]='service.gov[4] == five_1.value' class="form-check-input" id="radio1" name="optradio19" value="2"> 2
+              </label>
+        </div>
+        <div class="form-check-inline">
+            <label class="form-check-label" (click)="service.tet(five_2.value,'gov', 4)">
+              <input #five_2 type="radio" [checked]='service.gov[4] == five_2.value' class="form-check-input" id="radio2" name="optradio19" value="5"> 5
+            </label>
+          </div>
+          <div class="form-check-inline">
+              <label class="form-check-label" (click)="service.tet(five_3.value,'gov', 4)">
+                <input #five_3 type="radio" [checked]='service.gov[4] == five_3.value' class="form-check-input" id="radio3" name="optradio19" value="3"> 3
+              </label>
+            </div>
+            <div class="form-check-inline">
+                    <label class="form-check-label" (click)="service.tet(five_4.value,'gov', 4)">
+                      <input #five_4 type="radio" [checked]='service.gov[4] == five_4.value'class="form-check-input" id="radio4" name="optradio19" value="4"> 4
+                    </label>
+                  </div>
+      </ol>
+      </form>
+      <router-outlet></router-outlet>
+      </div>
+      
+
+
+
+

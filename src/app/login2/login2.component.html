@@ -1,0 +1,38 @@
+
+<div class="container-fluid ">
+        <div class="row justify-content-center">
+            <form [formGroup]='regform' (ngSubmit)="onSubmit()" novalidate> 
+                <div class="card text-center  mr-5">
+                    <div class="card-header bg-primary text-light text-center ">
+                        <span>Login form</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label><b>email</b></label><br>
+                              <div *ngIf="invalide" class="alert alert-danger">{{invalide}}</div>
+                            <input type="text" required formControlName='email' placeholder="abc@gmail.com" [class.is-invalid]="email.invalid && email.touched" 
+                            class="form-control" name="email">
+                            <small class="text-danger" [class.d-none]="email.valid || email.untouched">email is required</small>
+                        </div>
+                        <div class="card-footer bg-primary text-center">
+                            <button  class="btn btn-primary" type="submit">Login</button>
+                            
+                        </div>
+     
+                    </div>
+     
+                </div>
+            </form>
+            <div>
+                 <input type="checkbox" class="ml-2">Remember me  <a href="#" >forget password</a>
+     
+             </div>
+             <div>
+                <p class="ml-3">  Not yet register?<a routerLink="/signup2">Register</a></p>
+             </div>
+         <router-outlet></router-outlet>
+     
+        </div>
+     </div>
+     
+     

@@ -1,0 +1,57 @@
+<div class="container-fluid ">
+        <div class="row justify-content-center">
+            <form [formGroup]='regform' (ngSubmit)="onSubmit()" novalidate>
+                <div class="card text-center  mr-5">
+                    <div class="card-header bg-primary text-light text-center ">
+                        <span>Signup form</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label><b>firstName</b></label>
+                            <input type="text" required formControlName='firstName'  
+                            class="form-control" name="firstName">
+                            <small class="text-danger" [class.d-none]="firstName.valid || firstName.untouched">
+                                firstName is required</small>
+                        </div>
+                     
+                        <div class="form-group">
+                                <label><b>lastName</b></label>
+                                <input type="text" formControlName='lastName' required  
+                                class="form-control" name="lastName" >
+                                <small class="text-danger" [class.d-none]="lastName.valid || lastName.untouched">
+                                    lastName is required</small>
+                            </div>
+                            <div class="form-group">
+                                    <label><b>phone No</b></label>
+                                    <input type="text" formControlName='phoneNo' required  class="form-control" name="phoneNo" >
+                                    <div *ngIf="phoneNo.errors && (phoneNo.valid || phoneNo.touched)">
+                                        <small class="text-danger" *ngIf="phoneNo.errors.required">phone number is required</small>
+                                        <small class="text-danger" *ngIf="phoneNo.errors.pattern">phone number must be 10 digit</small>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                        <label><b>department</b></label>
+                                        <input type="text" required formControlName='department'  
+                                        class="form-control" name="department" >
+                                        <small class="text-danger" [class.d-none]="department.valid || department.untouched">
+                                            department is required</small>
+                                    </div>
+                        <div class="form-group">
+                            <label><b>email</b></label>
+                            <input type="text" required formControlName='email'   
+                            class="form-control" name="email" placeholder="abc@gmail.com">
+                            <small class="text-danger" [class.d-none]="email.valid || email.untouched">email is required</small>
+                        </div>
+                        <div class="card-footer bg-primary text-center">
+                             <button  class="btn btn-primary" type="submit">submit</button>
+                             
+                        </div>
+     
+                    </div>
+     
+                </div>
+            </form>
+            <router-outlet></router-outlet>
+        </div>
+        </div>
