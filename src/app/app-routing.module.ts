@@ -22,6 +22,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { combineLatest } from 'rxjs';
 import { componentFactoryName } from '@angular/compiler';
 import { StudentprofileComponent } from './studentprofile/studentprofile.component';
+import { DoneComponent } from './done/done.component';
 
 
 
@@ -33,6 +34,8 @@ const routes: Routes = [
   { path:"signup2",component:Signup2Component},
   { path:"cbt",component:CbtComponent},
   { path:"logout",component:LogoutComponent},
+   {path:"done",component:DoneComponent},
+  { path:"studentprofile",component:StudentprofileComponent},
   { path:"record",component:RecordComponent},
   { path:"signup3",component:Signup3Component},
   { path:"cbt",component:CbtComponent,children:[

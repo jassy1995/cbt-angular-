@@ -1,9 +1,9 @@
 
-<div class="container-fluid ">
+<div class="container-fluid">
    <div class="row justify-content-center">
        <form [formGroup]='regform' (ngSubmit)="onSubmit()" novalidate>
-           <div class="card text-center  mr-5">
-               <div class="card-header bg-primary text-light text-center ">
+           <div class="card text-center">
+               <div class="card-header bg-primary text-light">
                    <span>Login form</span>
                </div>
                <div class="card-body">
@@ -23,13 +23,13 @@
            </div>
        </form>
        <div>
-            <input type="checkbox" class="ml-2">Remember me  <a href="#">forget password</a>
+            <input type="checkbox" class="ml-2">Remember me<a href="#">forget password</a>
 
         </div>
         <div>
             <p class="ml-3">  Not yet register?<a routerLink="/signup1" class="text-primary">Register</a></p>
         </div>
-    <router-outlet></router-outlet>
+    <!-- <router-outlet></router-outlet> -->
 
    </div>
 </div>

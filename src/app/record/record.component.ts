@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MyserviceService } from '../myservice.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-record',
@@ -8,7 +9,7 @@ import { MyserviceService } from '../myservice.service';
 })
 export class RecordComponent implements OnInit {
 
-  constructor(public service:MyserviceService) { }
+  constructor(public service:MyserviceService,public http:HttpClient) { }
 
   ngOnInit(): void {
   }

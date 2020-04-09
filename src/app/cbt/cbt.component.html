@@ -1,18 +1,19 @@
 <div class="container-fluid">
-  <div class="justify-content-center" ><h3>{{service.minutes}} : {{service.seconds}}</h3></div>
-    <button class="btn btn-success float-right" (click)='service.onsubmit()' 
+  <div class="ml-2"><h3>{{service.minutes}} : {{service.seconds}}</h3></div>
+    <button class="btn btn-success ml-5 mb-4 "  
     type="submit"><a routerLink="/record" class="text-light" (click)='service.onsubmit()'>submit</a></button>
-     <div class="row mb-2 justify-content-center">
-        <button class="btn btn-primary text-light"> <a routerLink="/cbt/math" class="text-light">Mathematics</a></button>
-        <button class="btn btn-primary text-light "> <a routerLink="/cbt/phy" class="text-light">Physics</a></button>
-        <button class="btn btn-primary text-light"> <a routerLink="/cbt/chm" class="text-light">Chemistry</a></button>
-        <button class="btn btn-primary text-light"> <a routerLink="/cbt/bio" class="text-light">Biology</a></button>
-        <button class="btn btn-primary text-light"> <a routerLink="/cbt/gov" class="text-light">Government</a></button>
-        <button class="btn btn-primary text-light"> <a routerLink="/cbt/gns" class="text-light">English</a></button><br>
-        <h5 class="ml-2">select your prefer subject and start</h5><br>
-        <button class="btn btn-success text-light ml-5" > <a routerLink="/cbt/math" class="text-light" 
-          (click)='service.start()'>start</a></button>
+     <div class="row mb-2 justify-content-center ">
+        <button class="btn btn-primary text-light m-2"> <a routerLink="/cbt/math" class="text-light">Mathematics</a></button>
+        <button class="btn btn-primary text-light  m-2"> <a routerLink="/cbt/phy" class="text-light">Physics</a></button>
+        <button class="btn btn-primary text-light m-2"> <a routerLink="/cbt/chm" class="text-light">Chemistry</a></button>
+        <button class="btn btn-primary text-light m-2"> <a routerLink="/cbt/bio" class="text-light">Biology</a></button>
+        <button class="btn btn-primary text-light m-2"> <a routerLink="/cbt/gov" class="text-light">Government</a></button>
+        <button class="btn btn-primary text-light m-2"> <a routerLink="/cbt/gns" class="text-light">English</a></button><br>
+        <h3 class="mb-2">click the button below to start</h3><br><br>
+        
       </div>
+      <button class="btn btn-success text-light ml-5 col-6 " > <a routerLink="/cbt/math" class="text-light justify-content-center" 
+        (click)='service.start()'>start</a></button>
 <router-outlet></router-outlet>
 </div>
        

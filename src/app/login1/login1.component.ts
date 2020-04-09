@@ -15,7 +15,6 @@ export class Login1Component implements OnInit {
   invalide:String;
   regform=this.fb.group({
     email:['',[Validators.required,Validators.email]]
-
   })
   get email(){return this.regform.get('email')}
   ngOnInit(): void {
@@ -28,20 +27,26 @@ export class Login1Component implements OnInit {
       }
       this.service.studlog(form)
       .subscribe(res=>{
-        console.log(res,4)
         if (res.success) {
-              this.service.record = res.message;
-            this.router.navigate(["/cbt"]) 
+          if(res.done){
+            alert('Hello,you have done the exam already')
+            this.service.checker = res.score;
+            this.service.profile = res.message;
+            this.router.navigate(["/done"])
+          }else{
+            this.service.profile = res.message;
+            // console.log(this.service.profile)
+          this.router.navigate(["/cbt"]) 
+
+          }
         }
         else{
-          this.invalide=res.message;
+          this.invalide=res.message;          
+          // console.log('invalid');
         }
-      },
-      )
+      })
 
-      
     }
-    console.log('invalid');
   }
 
 

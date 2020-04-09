@@ -25,6 +25,8 @@ import { BioComponent } from './bio/bio.component';
 import { RecordComponent } from './record/record.component';
 import { LogoutComponent } from './logout/logout.component';
 import { StudentprofileComponent } from './studentprofile/studentprofile.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DoneComponent } from './done/done.component';
 
 @NgModule({
   declarations: [
@@ -49,14 +51,16 @@ import { StudentprofileComponent } from './studentprofile/studentprofile.compone
     BioComponent,
     RecordComponent,
     LogoutComponent,
-    StudentprofileComponent
+    StudentprofileComponent,
+    DoneComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

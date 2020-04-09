@@ -28,6 +28,7 @@ export class Signup1Component implements OnInit {
   get email(){return this.regform.get('email')}
   ngOnInit(): void {
   }
+
       onSubmit(){
         if(this.regform.valid){
           const form:User ={
@@ -36,6 +37,7 @@ export class Signup1Component implements OnInit {
             phoneNo:this.phoneNo.value,
             department:this.department.value,
             email:this.email.value
+            
           }
           this.service.register(form).subscribe(
           res=>{

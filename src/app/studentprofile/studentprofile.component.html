@@ -1,32 +1,41 @@
-<!-- <div class="container-fluid">
-        <div class="container-fluid">
-                 <table class="table table-dark">
-                        <thead>
-                          <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>score</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>service.record.firstName</td>
-                            <td>service.record.lastName</td>
-                            <td>service.score</td>
-                          </tr>
-                          <tr>
-                                <td>service.record.firstName</td>
-                                <td>service.record.lastName</td>
-                                <td>service.score</td>
-                          </tr>
-                          <tr>
-                                <td>service.record.firstName</td>
-                                <td>service.record.lastName</td>
-                                <td>service.score</td>
-                          </tr>
-                        </tbody>
-                      </table>
-        </div> 
-            
+<div class="container-fluid">
+  <div class="row ">
 
-</div> -->
+<table class="table table-hover mt-2 table-bordered table-responsive">
+    <thead>  
+      <tr>
+        <th>S/N</th>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>phoneNo</th>
+        <th>department</th>
+        <th>Score</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let lists of list; let i = index">
+          <td><b>{{i+1}}</b></td>
+      <td>{{lists.firstName}}</td>
+      <td>{{lists.lastName}}</td>
+      <td>{{lists.phoneNo}}</td>
+      <td>{{lists.department}}</td>
+      <td>{{lists.totalScore}}</td>
+      <td>
+        <button class="btn btn-danger btn-sm" (click)="delete(i)">
+        <span class="fa fa-trash">Delete</span>
+    </button>
+    </td>
+      </tr>
+    </tbody>
+  
+  </table>
+</div>
+</div>
+<!-- 
+  : {{service.record.firstName}} </h3>
+                <h3>lastName score is : {{service.record.lastName}} </h3>
+                <h3>email : {{service.record.email}} </h3> 
+                <h3>phone number : {{service.record.phoneNo}} </h3>
+                <h3>department : {{service.record.department}} </h3>
+                <h3>your total score is : {{service.score}} </h3> -->

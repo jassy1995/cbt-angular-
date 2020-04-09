@@ -1,12 +1,25 @@
 <div class="container-fluid">
         <div class="justify-content-center ml-5" >
-            <h3>Hello {{service.record.firstName}}   {{service.record.lastName}} your total is {{service.score}} </h3><br>
+                <p><b>fullName:</b> {{service.profile.firstName}} {{service.profile.lastName}}</p>
+                <p><b>mathematics:</b> {{service.mathScore}}</p>
+                <p><b>physics:</b> {{service.phyScore}}</p>
+                <p><b>chemistry:</b> {{service.chmScore}}</p>
+                <p><b>biology:</b> {{service.bioScore}}</p>
+                <p><b>Government:</b>  {{service.govScore}}</p>
+                <p><b>total score:</b> {{service.score}}</p>
+                
+
+            </div>
         
             <div class="justify-content-center ml-5"><button class="btn btn-danger justify-content-center" >
                     <a routerLink="/logout" class="text-light">log out</a></button></div>
 </div>
 
 
-
+<!-- <p><b>fullName</b>: {{service.record.firstName}}{{service.record.lastName}}</p>
+                
+               
+                
+                <p><b>total score</b> : <h5>{{service.score}}</p> -->
 
 
